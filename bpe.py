@@ -12,7 +12,7 @@ Ranks = dict[Pair, int]
 
 
 @cache
-def bytes_to_unicode() -> dict[str, str]:
+def bytes_to_unicode() -> dict[int, str]:
     d, n = {}, 0
     for i in range(256):
         if i < 33 or 126 < i < 161 or i == 173:
